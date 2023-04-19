@@ -36,13 +36,13 @@ install npm -y
 ```
 
 
-## Usage 
+## Usage :computer_mouse:
 
 To use this project, you can access the JSON files through the API endpoints.
 
 Contributions to this project are welcome. You can contribute by adding more locations to the JSON files, improving the code, or adding new features. To contribute, fork the repository and submit a pull request.
 
-## Authors
+## Authors :man_technologist:
 
 * Izzedin Ishimwe <<i.ishimwe@alustudent.com>> :sagittarius: izzeddin62
 * Jesse Maikarfi <<j.maikarfi1@alustudent.com>> :sagittarius: MaikarfiJesse 
