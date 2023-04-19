@@ -21,14 +21,18 @@ To change directory, run:
 cd Afri-Nomad_Prototype_Backend
 ```
 
-Then run:
-
-
-
-
+For root users, run: 
 
 ```markdown
-npm install
+sudo apt install npm -y
+```
+
+
+
+For super users, run:
+
+```markdown
+install npm -y
 ```
 
 
