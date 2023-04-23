@@ -63,6 +63,8 @@ def login():
         data = json.load(f)
     for user in data:
         if user['email'] == email and check_password_hash(user['password'], password):
+            if user['status'] == 'pending':
+                return jsonify({"msg": "Your application is still being reviewed check back later"}), 401
             access_token = create_access_token(identity=user)
             return jsonify(access_token=access_token), 200
 
@@ -88,10 +90,12 @@ def signup():
             'reason': request.json['reason'],
             'id': len(data) + 1,
             "role": "contributor",
+            "status": "pending"
         }
         data.append(new_user)
         with open('users.json', 'w', encoding="utf") as f:
             json.dump(data, f)
+            del new_user['password']
         return {'success': 'User created', 'user': new_user,
                 'token': create_access_token(identity={"id": len(data) + 1,
         "role": "contributor", "email": request.json['email']})}, 201
