@@ -1,0 +1,5 @@
+flask_jwt_extended>=4.0.0
+jsonschema>=4.0.0
+flask_bcrypt>=3.0.0
+pyjwt>=2.0.0
+flask_cors>=3.0
