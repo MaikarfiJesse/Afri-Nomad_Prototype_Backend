@@ -3,7 +3,7 @@
 import json
 
 from flask import Blueprint, jsonify, request
-from flask_jwt_extended import jwt_required
+from flask_jwt_extended import get_jwt_identity, jwt_required
 
 locations_bp = Blueprint('locations', __name__)
 
@@ -51,26 +51,55 @@ def get_pending_locations():
 
 
 
-@locations_bp.route('/upvote-locations', methods=['PUT'])
-def put_upvote_pending_locations_id():
+@locations_bp.route('/upvote-locations/<location_id>', methods=['PATCH'])
+@jwt_required()
+def put_upvote_pending_locations_id(location_id):
     """Upvote or agree to locations that are pending"""
-    with open('locations.json', 'r') as f:
+    user = get_jwt_identity()
+    with open('locations.json', 'r', encoding="utf") as f:
         data = json.load(f)
-        print(data)
-
-
-    for location in data ['locations']:
-        if location ['id'] == 'location_id' and location ['status'] == 'pending':
-            if 'upvotes' not in location:
-                location ['upvotes'] = []
-
-    location['upvotes'].append(request.form['contributor_id'])
-    with open('locations.json', 'w') as f:
+    for location in data:
+        try:
+            if location['id'] == int(location_id) and location.get("status", None) == "pending":
+                if 'upvotes' not in location:
+                    location['upvotes'] = []
+                if user.get("id") not in location['upvotes']:
+                    location['upvotes'].append(user.get("id"))
+                else:
+                    return 'You have already upvoted this location', 400
+        except ValueError:
+            return 'Invalid location id', 400
+    with open('locations.json', 'w', encoding="utf") as f:
         json.dump(data , f, indent=2)
-        if 'upvotes' == True:
+        return 'Location upvoted successfully. Thank you for your input!'
 
-          return 'Location upvoted successfully. Thank you for your input!'
 
-        else:
 
-          return 'Location not found or nor pending. Check back later!'
+@locations_bp.route('/approve-locations/<location_id>', methods=['PUT'])
+@jwt_required()
+def put_approve_locations(location_id):
+    """Approve the most upvoted locations"""
+    user = get_jwt_identity()
+    with open('locations.json', 'r', encoding="utf") as f:
+        data = json.load(f)
+    for location in data:
+        if location['id'] == location_id:
+            location['status'] = 'approved'
+            return jsonify({'message': 'Location approved successfully.'})
+    return jsonify({'error': 'Location not found!'}), 400
+
+
+
+
+@locations_bp.route('/reject-locations/<location_id>', methods=['PUT'])
+@jwt_required()
+def put_reject_locations(location_id):
+    """Rejected unwanted or downvoted locations"""
+    user = get_jwt_identity()
+    with open('locations.json', 'r', encoding="utf") as f:
+        data = json.load(f)
+    for location in data:
+        if location['id'] == location_id:
+            location['status'] = 'rejected'
+            return jsonify({'message': 'Location rejected. Try again later!'})
+    return jsonify({'error': 'Location not found!'}), 400
