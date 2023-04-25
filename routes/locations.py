@@ -61,10 +61,10 @@ def put_upvote_pending_locations_id(location_id):
     for location in data:
         try:
             if location['id'] == int(location_id) and location.get("status", None) == "pending":
-                if 'approval' not in location:
-                    location['approval'] = []
-                if user.get("id") not in location['approval']:
-                    location['approval'].append(user.get("id"))
+                if 'upvotes' not in location:
+                    location['upvotes'] = []
+                if user.get("id") not in location['upvotes']:
+                    location['upvotes'].append(user.get("id"))
                 else:
                     return 'You have already upvoted this location', 400
         except ValueError:
