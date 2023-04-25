@@ -49,11 +49,13 @@ signup_schema = {
 @auth_bp.route('/login', methods=['POST'])
 def login():
     """Login a user"""
+    print("got here")
     if not request.is_json:
         return jsonify({"msg": "Missing JSON in request"}), 400
 
     email = request.json.get('email', None)
     password = request.json.get('password', None)
+    print(email, password, '==================')
     if not email:
         return jsonify({"msg": "Missing email parameter"}), 400
     if not password:
