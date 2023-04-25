@@ -101,3 +101,12 @@ def signup():
         "role": "contributor", "email": request.json['email']})}, 201
     except jsonschema.exceptions.ValidationError as exception:
         return {'error': exception.message}, 400
+    
+@auth_bp.route('/pending-contributors')
+def get_pending_contributors():
+    """ list of pending contributors"""
+    with open('users.json', mode='r', encoding="utf") as f:
+            data = json.load(f)
+            print(data)
+    return [contributor for contributor in data if contributor.get('status',' None') == 'pending']
+        
