@@ -48,3 +48,29 @@ def get_pending_locations():
         data = json.load(f)
         print(data)
     return [location for location in data if location.get('status',' None') == 'pending']
+
+
+
+@locations_bp.route('/upvote-locations', methods=['PUT'])
+def put_upvote_pending_locations_id():
+    """Upvote or agree to locations that are pending"""
+    with open('locations.json', 'r') as f:
+        data = json.load(f)
+        print(data)
+
+
+    for location in data ['locations']:
+        if location ['id'] == 'location_id' and location ['status'] == 'pending':
+            if 'upvotes' not in location:
+                location ['upvotes'] = []
+
+    location['upvotes'].append(request.form['contributor_id'])
+    with open('locations.json', 'w') as f:
+        json.dump(data , f, indent=2)
+        if 'upvotes' == True:
+
+          return 'Location upvoted successfully. Thank you for your input!'
+
+        else:
+
+          return 'Location not found or nor pending. Check back later!'
