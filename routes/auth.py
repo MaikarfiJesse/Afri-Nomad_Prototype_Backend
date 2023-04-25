@@ -55,7 +55,6 @@ def login():
 
     email = request.json.get('email', None)
     password = request.json.get('password', None)
-    print(email, password, '==================')
     if not email:
         return jsonify({"msg": "Missing email parameter"}), 400
     if not password:
@@ -116,4 +115,16 @@ def get_pending_contributors():
             data = json.load(f)
             print(data)
     return [contributor for contributor in data if contributor.get('status',' None') == 'pending']
-        
+
+@auth_bp.route('/user', methods=['GET'])
+@jwt_required()
+def get_user():
+    """Get a user"""
+    token_user = get_jwt_identity()
+    print(token_user)
+    with open('users.json', mode='r', encoding="utf") as f:
+            data = json.load(f)
+    for user in data:
+        if user.get('id') == token_user.get('id'):
+            return user
+    return "user not found", 404     

@@ -19,7 +19,7 @@ def get_locations():
 def add_location():
     """Add a new location"""
     location = request.get_json()
-    with open('locations.json') as f:
+    with open('locations.json', 'r', , encoding="utf") as f:
         data = json.load(f)
 
     new_location = {
@@ -35,7 +35,7 @@ def add_location():
 
     data.append(new_location)
 
-    with open('locations.json', 'w') as f:
+    with open('locations.json', 'w', encoding="utf") as f:
         json.dump(data, f, indent=2)
 
     return new_location
@@ -44,7 +44,7 @@ def add_location():
 @locations_bp.route('/pending-locations')
 def get_pending_locations():
     """Get all locations that are pending"""
-    with open('locations.json', 'r') as f:
+    with open('locations.json', 'r', encoding="utf") as f:
         data = json.load(f)
         print(data)
     return [location for location in data if location.get('status',' None') == 'pending']
