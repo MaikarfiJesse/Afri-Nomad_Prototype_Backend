@@ -59,13 +59,16 @@ def put_upvote_pending_locations_id(location_id):
     with open('locations.json', 'r', encoding="utf") as f:
         data = json.load(f)
     for location in data:
-        if location['id'] == int(location_id) and location.get("status", None) == "pending":
-            if 'upvotes' not in location:
-                location['upvotes'] = []
-            if user.get("id") not in location['upvotes']:
-                location['upvotes'].append(user.get("id"))
-            else:
-                return 'You have already upvoted this location', 400
+        try:
+            if location['id'] == int(location_id) and location.get("status", None) == "pending":
+                if 'approval' not in location:
+                    location['approval'] = []
+                if user.get("id") not in location['approval']:
+                    location['approval'].append(user.get("id"))
+                else:
+                    return 'You have already upvoted this location', 400
+        except ValueError:
+            return 'Invalid location id', 400
     with open('locations.json', 'w', encoding="utf") as f:
         json.dump(data , f, indent=2)
         return 'Location upvoted successfully. Thank you for your input!'
