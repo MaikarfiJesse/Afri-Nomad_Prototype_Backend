@@ -12,7 +12,7 @@
       "https://res.cloudinary.com/dbisqdemp/image/upload/v1681842837/afri-nomad/nyungwe4_sebine.jpg",
       "https://res.cloudinary.com/dbisqdemp/image/upload/v1681842848/afri-nomad/nyungwe5_uekqt5.jpg"
     ],
-    "description": "One of the oldest rainforests in Africa, Nyungwe is rich in biodiversity and spectacularly beautiful. The mountainous region is teaming with wildlife, including a small population of chimpanzees as well as 12 other species of primate, including the L’Hoest’s monkey endemic to the Albertine Rift."
+    "description": "One of the oldest rainforests in Africa, Nyungwe is rich in biodiversity and spectacularly beautiful. The mountainous region is teaming with wildlife, including a small population of chimpanzees as well as 12 other species of primate, including the L\u2019Hoest\u2019s monkey endemic to the Albertine Rift."
   },
   {
     "name": "Virunga Mountains",
@@ -207,7 +207,7 @@
       "https://res.cloudinary.com/dbisqdemp/image/upload/v1681842842/afri-nomad/mambila4_gopjjl.jpg",
       "https://res.cloudinary.com/dbisqdemp/image/upload/v1681842839/afri-nomad/mambila5_hyzqdg.jpg"
     ],
-    "description": "Located in the highland region of Taraba State of Nigeria it houses Chappal Waddi mountain, regarded to be Nigeria's highest point with an average height of roughly 2,419 meters (7,936 feet) above sea level. As a travel destination, it offers some of the nicest weather in the nation, which is mild and welcoming throughout the year, in contrast to other regions of the nation where there are temperature fluctuations during the day and night. Moreover, there are no tse-tse flies or mosquitoes on the Mambilla Plateau. In Mambilla, daytime temperatures rarely get beyond 25°C; the driest months are December and January, when relative humidity drops to approximately 15%, while the wet season typically begins in August."
+    "description": "Located in the highland region of Taraba State of Nigeria it houses Chappal Waddi mountain, regarded to be Nigeria's highest point with an average height of roughly 2,419 meters (7,936 feet) above sea level. As a travel destination, it offers some of the nicest weather in the nation, which is mild and welcoming throughout the year, in contrast to other regions of the nation where there are temperature fluctuations during the day and night. Moreover, there are no tse-tse flies or mosquitoes on the Mambilla Plateau. In Mambilla, daytime temperatures rarely get beyond 25\u00b0C; the driest months are December and January, when relative humidity drops to approximately 15%, while the wet season typically begins in August."
   },
   {
     "name": "OBUDU MOUNTAIN RESORT",
@@ -252,7 +252,7 @@
       "https://res.cloudinary.com/dbisqdemp/image/upload/v1681900199/afri-nomad/erin4_tqc1or.jpg",
       "erin5"
     ],
-    "description": "Oluminrin Waterfall is a Sacred destination in Nigeria and no doubt, it is one of the most unique destinations for waterfall chasing , hiking and Camping in Nigeria . It’s the Only waterfall in Nigeria and Africa as a whole that has seven different Waterfalls at different layers , where the top of the seventh will take you into a different community in a different state entirely. The name Erin Ijesha can be loosely translated as Elephant of Ijesha. At the top of the hill on the seventh floor is the source of the water and the ancient Abake village."
+    "description": "Oluminrin Waterfall is a Sacred destination in Nigeria and no doubt, it is one of the most unique destinations for waterfall chasing , hiking and Camping in Nigeria . It\u2019s the Only waterfall in Nigeria and Africa as a whole that has seven different Waterfalls at different layers , where the top of the seventh will take you into a different community in a different state entirely. The name Erin Ijesha can be loosely translated as Elephant of Ijesha. At the top of the hill on the seventh floor is the source of the water and the ancient Abake village."
   },
   {
     "name": "EKO TOURIST BEACH RESORT.",
@@ -260,6 +260,7 @@
     "country": "Nigeria",
     "countryId": "nigeria",
     "location": "Lagos, Nigeria",
+    "status": "pending",
     "img": "https://res.cloudinary.com/dbisqdemp/image/upload/v1681842833/afri-nomad/eko_coztku.jpg",
     "imgs": [
       "https://res.cloudinary.com/dbisqdemp/image/upload/v1681899984/afri-nomad/eko2_xoqtaf.jpg",
@@ -267,6 +268,9 @@
       "https://res.cloudinary.com/dbisqdemp/image/upload/v1681899984/afri-nomad/eko4_qu7f7r.jpg",
       "https://res.cloudinary.com/dbisqdemp/image/upload/v1681899983/afri-nomad/eko5_nexf7d.jpg"
     ],
-    "description": "Also known as Akodo Beach, this is a privately managed beach that provides fun seekers and picnickers an alternative to the hustle and bustle of conventional beaches. With a view to provide guests and organizations with an affordable recreational place where they can think through ideas, review strategies, unwind, meditate and relax, it offers premium comfort and relaxation. The resort has an amusement park, clinic, private security and other sporting facilities such as snooker, boat riding, archery, beach football, table tennis, quad biking etc. Apart from the long stretch of beach off the coast of Atlantic, there is also a well-maintained swimming pool for the younger ones."
+    "description": "Also known as Akodo Beach, this is a privately managed beach that provides fun seekers and picnickers an alternative to the hustle and bustle of conventional beaches. With a view to provide guests and organizations with an affordable recreational place where they can think through ideas, review strategies, unwind, meditate and relax, it offers premium comfort and relaxation. The resort has an amusement park, clinic, private security and other sporting facilities such as snooker, boat riding, archery, beach football, table tennis, quad biking etc. Apart from the long stretch of beach off the coast of Atlantic, there is also a well-maintained swimming pool for the younger ones.",
+    "upvotes": [
+      1
+    ]
   }
 ]
