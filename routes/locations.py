@@ -19,7 +19,7 @@ def get_locations():
 def add_location():
     """Add a new location"""
     location = request.get_json()
-    with open('locations.json', 'r', , encoding="utf") as f:
+    with open('locations.json', 'r', encoding="utf") as f:
         data = json.load(f)
 
     new_location = {
