@@ -1,1 +1,21 @@
-[{"first_name": "izzeddin", "last_name": "Ishimwe", "email": "test@test.com", "role": "admin", "password": "$2b$12$7eT03OmSHqGhEyS4ZivGduFZMB9Ao4vLgttYPWN9d0fJ2L9883Wo6", "id": 1, "status": "active"}, {"first_name": "sdf dfdsf", "last_name": "ishimwe", "email": "test6@test.com", "password": "$2b$12$7eT03OmSHqGhEyS4ZivGduFZMB9Ao4vLgttYPWN9d0fJ2L9883Wo6", "reason": "I want to show the beaty of my country and i know a lot of locations", "id": 2, "role": "contributor", "status": "pending"}, {"first_name": "izzeddin", "last_name": "ishimwe", "email": "test34@test.com", "password": "$2b$12$aOUvLiawKFF/bcqqpLjFqeW87WXX/w5hkuOdKqp5nw5P.H2s1fkEG", "reason": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY4MjM0ODQzOCwianRpIjoiMDdhMjBkYzktMTFlYi00ZDRjLTlhZTUtMmZiNjRhODkzNGIwIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJmaXJzdF9uYW1lIjoiaXp6ZWRkaW4iLCJsYXN0X25hbWUiOiJJc2hpbXdlIiwiZW1haWwiOiJ0ZXN0QHRlc3QuY29tIiwicm9sZSI6ImFkbWluIiwicGFzc3dvcmQiOiIkMmIkMTIkN2VUMDNPbVNIcUdoRXlTNFppdkdkdUZaTUI5QW80dkxndHRZUFdOOWQwZkoyTDk4ODNXbzYiLCJpZCI6MSwic3RhdHVzIjoiYWN0aXZlIn0sIm5iZiI6MTY4MjM0ODQzOCwiZXhwIjoxNjgyMzQ5MzM4fQ.b6JMAPI3ZHQLQZ7Rl2ekixIyUKhnrV3JH8Je9slRY4w", "id": 3, "role": "contributor", "status": "pending"}, {"first_name": "test", "last_name": "test", "email": "test344@test.com", "password": "$2b$12$c2bx/Pa8Bar9YSAf8DEEcO0/JI1MAxYz8hZ2VA8658BXY3YJva/2W", "reason": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY4MjM0ODQzOCwianRpIjoiMDdhMjBkYzktMTFlYi00ZDRjLTlhZTUtMmZiNjRhODkzNGIwIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJmaXJzdF9uYW1lIjoiaXp6ZWRkaW4iLCJsYXN0X25hbWUiOiJJc2hpbXdlIiwiZW1haWwiOiJ0ZXN0QHRlc3QuY29tIiwicm9sZSI6ImFkbWluIiwicGFzc3dvcmQiOiIkMmIkMTIkN2VUMDNPbVNIcUdoRXlTNFppdkdkdUZaTUI5QW80dkxndHRZUFdOOWQwZkoyTDk4ODNXbzYiLCJpZCI6MSwic3RhdHVzIjoiYWN0aXZlIn0sIm5iZiI6MTY4MjM0ODQzOCwiZXhwIjoxNjgyMzQ5MzM4fQ.b6JMAPI3ZHQLQZ7Rl2ekixIyUKhnrV3JH8Je9slRY4w", "id": 4, "role": "contributor", "status": "pending"}, {"first_name": "fsadfasd", "last_name": "fsafdasdads", "email": "test44@test.com", "password": "$2b$12$KYZ0/ISWMSlQ6k4NK0Arlux8gW53HhpEDrZO8qTunEzmV0SgFDdvS", "reason": "fsdfadsfadsfsdfa asdfasdfadsf asdfasdfasdf sdfasdf dfasdf fadsfadsf adsfdsaf dsafadsf asdfdsaf adfasdf adfasdf a", "id": 5, "role": "contributor", "status": "pending"}, {"first_name": "asdfads", "last_name": "asdfadsf", "email": "test54@test.com", "password": "$2b$12$MxRYvuPvl0zU5VBVdw9azuS1Ka86MX6pi7VcJb2uMWdtu.AHa3Uqq", "reason": "fadsfadfadsfasdfdsa adsfasdfasdfadsf adfadfadsf adfasdfasd adfadsfasdfasdfa asdfadsfadf adsfadsfasdfa dsafadfadsf adfadfads adsfadsfadsfa adsfasdfasd adsfasdfadsf asdfasdfasdad asdfadfasdfa ds fasdfasdf", "id": 6, "role": "contributor", "status": "pending"}, {"first_name": "fasdfasdf", "last_name": "asdfsadf", "email": "test64@test.com", "password": "$2b$12$jcH/Up92o9L1QIVuhaQ9Vu5SOme..cFDaE/vBUkwfBqb1Sem7AxBi", "reason": "fasdfadsfadsfsdadsf adsfasdfdsaf adsfasdfasdf adfasfa asfsadfas", "id": 7, "role": "contributor", "status": "pending"}]
+[
+    {
+        "first_name": "izzeddin",
+        "last_name": "Ishimwe",
+        "email": "test@test.com",
+        "role": "admin",
+        "status": "active",
+        "password": "$2b$12$7eT03OmSHqGhEyS4ZivGduFZMB9Ao4vLgttYPWN9d0fJ2L9883Wo6",
+        "id": 1
+    },
+    {
+        "first_name": "sdf dfdsf",
+        "last_name": "ishimwe",
+        "email": "test6@test.com",
+        "password": "$2b$12$7eT03OmSHqGhEyS4ZivGduFZMB9Ao4vLgttYPWN9d0fJ2L9883Wo6",
+        "reason": "I want to show the beaty of my country and i know a lot of locations",
+        "id": 2,
+        "role": "contributor",
+        "status": "pending"
+}
+]

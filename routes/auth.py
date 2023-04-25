@@ -3,7 +3,7 @@
 import json
 import jsonschema
 from flask import Blueprint, jsonify, request
-from flask_jwt_extended import create_access_token
+from flask_jwt_extended import create_access_token, jwt_required, get_jwt_identity
 from flask_bcrypt import bcrypt, check_password_hash
 from jsonschema import validate
 
@@ -103,3 +103,17 @@ def signup():
         "role": "contributor", "email": request.json['email']})}, 201
     except jsonschema.exceptions.ValidationError as exception:
         return {'error': exception.message}, 400
+    
+@auth_bp.route('/pending-contributors')
+@jwt_required()
+def get_pending_contributors():
+    """ list of pending contributors"""
+    user = get_jwt_identity()
+    print(user)
+    if user.get("status") != "admin":
+        return "you are not allowed to do this action", 401
+    with open('users.json', mode='r', encoding="utf") as f:
+            data = json.load(f)
+            print(data)
+    return [contributor for contributor in data if contributor.get('status',' None') == 'pending']
+        
