@@ -1,6 +1,8 @@
 [
   {
     "name": "Nyungwe Forest National Park",
+    "upvotes": [],
+    "status": "active",
     "id": 1,
     "country": "Rwanda",
     "countryId": "rwanda",
@@ -16,6 +18,8 @@
   },
   {
     "name": "Virunga Mountains",
+    "upvotes": [],
+    "status": "active",
     "id": 2,
     "country": "Rwanda",
     "countryId": "rwanda",
@@ -31,6 +35,8 @@
   },
   {
     "name": "Gishwati-Mukura National Park and Biosphere Reserve",
+    "upvotes": [],
+    "status": "active",
     "id": 3,
     "country": "Rwanda",
     "countryId": "rwanda",
@@ -46,6 +52,8 @@
   },
   {
     "name": "Lake Kivu",
+    "upvotes": [],
+    "status": "active",
     "id": 4,
     "country": "Rwanda",
     "countryId": "rwanda",
@@ -61,6 +69,8 @@
   },
   {
     "name": "Akagera National Park",
+    "upvotes": [],
+    "status": "active",
     "id": 5,
     "country": "Rwanda",
     "countryId": "rwanda",
@@ -76,6 +86,8 @@
   },
   {
     "name": "Mombasa city",
+    "upvotes": [],
+    "status": "active",
     "id": 7,
     "country": "Kenya",
     "countryId": "kenya",
@@ -91,6 +103,8 @@
   },
   {
     "name": "Masai Mara National Park",
+    "upvotes": [],
+    "status": "active",
     "id": 7,
     "country": "Kenya",
     "countryId": "kenya",
@@ -106,6 +120,8 @@
   },
   {
     "name": "Nakuru",
+    "upvotes": [],
+    "status": "active",
     "id": 8,
     "country": "Kenya",
     "countryId": "kenya",
@@ -121,6 +137,8 @@
   },
   {
     "name": "Kisumu",
+    "upvotes": [],
+    "status": "active",
     "id": 9,
     "country": "Kenya",
     "countryId": "kenya",
@@ -136,6 +154,8 @@
   },
   {
     "name": "Yankari National Park",
+    "upvotes": [],
+    "status": "active",
     "id": 10,
     "country": "Nigeria",
     "countryId": "nigeria",
@@ -151,6 +171,8 @@
   },
   {
     "name": "Kajuru Castle",
+    "upvotes": [],
+    "status": "active",
     "id": 11,
     "country": "Nigeria",
     "countryId": "nigeria",
@@ -166,6 +188,8 @@
   },
   {
     "name": "Gurara Falls",
+    "upvotes": [],
+    "status": "active",
     "id": 12,
     "country": "Nigeria",
     "countryId": "nigeria",
@@ -181,6 +205,8 @@
   },
   {
     "name": "Shere Hills",
+    "upvotes": [],
+    "status": "active",
     "id": 13,
     "country": "Nigeria",
     "countryId": "nigeria",
@@ -196,6 +222,8 @@
   },
   {
     "name": "Mambilla Plateau",
+    "upvotes": [],
+    "status": "active",
     "id": 14,
     "country": "Nigeria",
     "countryId": "nigeria",
@@ -211,6 +239,8 @@
   },
   {
     "name": "OBUDU MOUNTAIN RESORT",
+    "upvotes": [],
+    "status": "active",
     "id": 15,
     "country": "Nigeria",
     "countryId": "nigeria",
@@ -226,6 +256,8 @@
   },
   {
     "name": "THE ROYAL PALACE OF THE OBA OF BENIN",
+    "upvotes": [],
+    "status": "active",
     "id": 16,
     "country": "Nigeria",
     "countryId": "nigeria",
@@ -241,6 +273,8 @@
   },
   {
     "name": "ERIN-IJESHA WATERFALLS",
+    "upvotes": [],
+    "status": "active",
     "id": 17,
     "country": "Nigeria",
     "countryId": "nigeria",
@@ -256,10 +290,14 @@
   },
   {
     "name": "EKO TOURIST BEACH RESORT.",
+    "upvotes": [
+      1
+    ],
     "id": 18,
     "country": "Nigeria",
     "countryId": "nigeria",
     "location": "Lagos, Nigeria",
+    "status": "pending",
     "img": "https://res.cloudinary.com/dbisqdemp/image/upload/v1681842833/afri-nomad/eko_coztku.jpg",
     "imgs": [
       "https://res.cloudinary.com/dbisqdemp/image/upload/v1681899984/afri-nomad/eko2_xoqtaf.jpg",
@@ -271,6 +309,7 @@
   },
   {
     "name": "test",
+    "id": 19,
     "country": "test",
     "countryId": "rwanda",
     "location": "test, test",
@@ -282,11 +321,14 @@
       "http://res.cloudinary.com/dbisqdemp/image/upload/v1682371005/signature_2_sroo4w.jpg"
     ],
     "description": "fsjflksjdfjs jfskdfjsljfd sjldf;jslkdf j;lsdjfs;lfdj ;sdfjs;ldjf ;sjdfksfjj ;",
-    "approval": [],
+    "upvotes": [
+      1
+    ],
     "status": "pending"
   },
   {
     "name": "testtt",
+    "id": 20,
     "country": "test",
     "countryId": "rwanda",
     "location": "test, test",
@@ -298,11 +340,14 @@
       "http://res.cloudinary.com/dbisqdemp/image/upload/v1682371812/signature_2_mivggo.jpg"
     ],
     "description": "fsjflksjdfjs jfskdfjsljfd sjldf;jslkdf j;lsdjfs;lfdj ;sdfjs;ldjf ;sjdfksfjj ;",
-    "approval": [],
+    "upvotes": [
+      1
+    ],
     "status": "pending"
   },
   {
     "name": "testttttt",
+    "id": 21,
     "country": "test",
     "countryId": "rwanda",
     "location": "test, test",
@@ -314,11 +359,14 @@
       "http://res.cloudinary.com/dbisqdemp/image/upload/v1682371998/signature_2_iraqav.jpg"
     ],
     "description": "fsjflksjdfjs jfskdfjsljfd sjldf;jslkdf j;lsdjfs;lfdj ;sdfjs;ldjf ;sjdfksfjj ;",
-    "approval": [],
+    "upvotes": [
+      1
+    ],
     "status": "pending"
   },
   {
     "name": "Muringa",
+    "id": 22,
     "country": "Rwanda",
     "countryId": "rwanda",
     "location": "Kigali, Rwanda",
@@ -330,11 +378,14 @@
       "http://res.cloudinary.com/dbisqdemp/image/upload/v1682411244/signature_2_euufyk.jpg"
     ],
     "description": "This is a nice place to visit. try it out. right now. or don't it is up to you right now.",
-    "approval": [],
+    "upvotes": [
+      1
+    ],
     "status": "pending"
   },
   {
     "name": "testtetet",
+    "id": 23,
     "countryId": "rwanda",
     "country": "Rwanda",
     "location": "Kigali, Rwanda",
@@ -346,11 +397,14 @@
       "http://res.cloudinary.com/dbisqdemp/image/upload/v1682411692/signature_2_hybfet.jpg"
     ],
     "description": "fdsjlkfdljskdf skdlfjsldjflskd sdfjlksjflksd sdfjlkdsjfklsdjf",
-    "approval": [],
+    "upvotes": [
+      1
+    ],
     "status": "pending"
   },
   {
     "name": "testtesttest",
+    "id": 24,
     "country": "Rwanda",
     "location": "Kigali, Rwanda",
     "img": "http://res.cloudinary.com/dbisqdemp/image/upload/v1682411808/signature_2_hyidvo.jpg",
@@ -361,7 +415,9 @@
       "http://res.cloudinary.com/dbisqdemp/image/upload/v1682411845/signature_2_ehw6dj.jpg"
     ],
     "description": "sdfsd dsfsdf sfsdf sdfsf sdfsdf sdfsdf sdfsdf sdfsdf sdfsd sdfsdf sdfsdf sdfds sdfsdf sdfsdf sdfsdf sdfsdf",
-    "approval": [],
+    "upvotes": [
+      1
+    ],
     "status": "pending"
   }
 ]
