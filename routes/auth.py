@@ -114,3 +114,25 @@ def get_pending_contributors():
             data = json.load(f)
             print(data)
     return [contributor for contributor in data if contributor.get('status',' None') == 'pending']
+
+@auth_bp.route('/approve-contributors/<int:contributor_id>', methods=['PATCH'])
+@jwt_required()
+def approve_contributors(contributor_id):
+    """ Approving pending contributors"""
+    user = get_jwt_identity()
+    if user.get("role") != "admin":
+        return "you are not allowed to do this action", 401
+
+    with open('users.json', mode='r', encoding='utf') as f:
+            data = json.load(f)
+
+    for user in data:
+        if user['id'] == contributor_id and user['status'] == 'pending' and user['role'] == 'contributor':
+            user['status'] = 'active'
+            break
+
+    with open('users.json', mode='w', encoding='utf') as f:
+        json.dump(data, f, ensure_ascii=False, indent=4)
+
+    return "Contributor with ID {} approved successfully".format(contributor_id)
+
