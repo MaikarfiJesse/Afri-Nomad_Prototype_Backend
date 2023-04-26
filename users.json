@@ -17,5 +17,15 @@
         "id": 2,
         "role": "contributor",
         "status": "pending"
-}
+    },
+    {
+        "first_name": "test",
+        "last_name": "ishimwe",
+        "email": "test46@test.com",
+        "password": "$2b$12$7eT03OmSHqGhEyS4ZivGduFZMB9Ao4vLgttYPWN9d0fJ2L9883Wo6",
+        "reason": "I want to show the beaty of my country and i know a lot of locations",
+        "id": 3,
+        "role": "contributor",
+        "status": "active"
+    }
 ]

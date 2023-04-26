@@ -122,8 +122,29 @@ def get_user():
     token_user = get_jwt_identity()
     print(token_user)
     with open('users.json', mode='r', encoding="utf") as f:
-            data = json.load(f)
+        data = json.load(f)
     for user in data:
         if user.get('id') == token_user.get('id'):
             return user
-    return "user not found", 404     
+    return "user not found", 404
+
+@auth_bp.route('/approve-contributors/<int:contributor_id>', methods=['PATCH'])
+@jwt_required()
+def approve_contributors(contributor_id):
+    """ Approving pending contributors"""
+    user = get_jwt_identity()
+    if user.get("role") != "admin":
+        return "you are not allowed to do this action", 401
+
+    with open('users.json', mode='r', encoding='utf') as f:
+        data = json.load(f)
+
+    for user in data:
+        if user['id'] == contributor_id and user['status'] == 'pending' and user['role'] == 'contributor':
+            user['status'] = 'active'
+            break
+
+    with open('users.json', mode='w', encoding='utf') as f:
+        json.dump(data, f, ensure_ascii=False, indent=4)
+
+    return "Contributor with ID {} approved successfully".format(contributor_id)
