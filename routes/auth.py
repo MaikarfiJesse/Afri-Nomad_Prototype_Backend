@@ -114,4 +114,3 @@ def get_pending_contributors():
             data = json.load(f)
             print(data)
     return [contributor for contributor in data if contributor.get('status',' None') == 'pending']
-        

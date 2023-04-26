@@ -45,6 +45,6 @@ def add_location():
 def get_pending_locations():
     """Get all locations that are pending"""
     with open('locations.json', 'r') as f:
-        data = json.load(f)
+        data = json.load(f) 
         print(data)
     return [location for location in data if location.get('status',' None') == 'pending']
