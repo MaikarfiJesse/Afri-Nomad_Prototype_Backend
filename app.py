@@ -9,7 +9,7 @@ from routes.locations import locations_bp
 
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, resources={r"/*": {"origins": "*"}})
 app.register_blueprint(auth_bp)
 app.register_blueprint(locations_bp)
 app.debug = True
