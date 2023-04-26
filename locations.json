@@ -273,7 +273,9 @@
   },
   {
     "name": "ERIN-IJESHA WATERFALLS",
-    "upvotes": [],
+    "upvotes": [
+      1
+    ],
     "status": "active",
     "id": 17,
     "country": "Nigeria",
@@ -297,7 +299,7 @@
     "country": "Nigeria",
     "countryId": "nigeria",
     "location": "Lagos, Nigeria",
-    "status": "pending",
+    "status": "active",
     "img": "https://res.cloudinary.com/dbisqdemp/image/upload/v1681842833/afri-nomad/eko_coztku.jpg",
     "imgs": [
       "https://res.cloudinary.com/dbisqdemp/image/upload/v1681899984/afri-nomad/eko2_xoqtaf.jpg",
@@ -324,7 +326,7 @@
     "upvotes": [
       1
     ],
-    "status": "pending"
+    "status": "active"
   },
   {
     "name": "testtt",
@@ -343,7 +345,7 @@
     "upvotes": [
       1
     ],
-    "status": "pending"
+    "status": "active"
   },
   {
     "name": "testttttt",

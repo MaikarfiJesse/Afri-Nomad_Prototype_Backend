@@ -47,7 +47,6 @@ def get_pending_locations():
     """Get all locations that are pending"""
     with open('locations.json', 'r', encoding="utf") as f:
         data = json.load(f)
-        print(data)
     return [location for location in data if location.get('status',' None') == 'pending']
 
 
@@ -60,7 +59,6 @@ def put_upvote_pending_locations_id(location_id):
     with open('locations.json', 'r', encoding="utf") as f:
         data = json.load(f)
     for location in data:
-        print(location.get("id"), location_id, user.get("id"))  
         try:
             if location['id'] == int(location_id) and location.get("status", None) == "pending":
                 if 'upvotes' not in location:
@@ -74,3 +72,38 @@ def put_upvote_pending_locations_id(location_id):
     with open('locations.json', 'w', encoding="utf") as f:
         json.dump(data , f, indent=2)
         return 'Location upvoted successfully. Thank you for your input!'
+
+
+@locations_bp.route('/approve-locations/<int:location_id>', methods=['PUT'])
+@jwt_required()
+def put_approve_locations(location_id):
+    """Approve the most upvoted locations"""
+    user = get_jwt_identity()
+    if user.get("role") != "admin":
+        return 'You are not authorized to perform this action', 401
+    with open('locations.json', 'r', encoding="utf") as f:
+        data = json.load(f)
+    for location in data:
+        if location['id'] == location_id:
+            location['status'] = 'active'
+            with open('locations.json', 'w', encoding="utf") as f:
+                json.dump(data, f, indent=2)
+            return jsonify({'message': 'Location approved successfully.'})
+    
+    return jsonify({'error': 'Location not found!'}), 400
+
+
+@locations_bp.route('/reject-locations/<int:location_id>', methods=['PUT'])
+@jwt_required()
+def put_reject_locations(location_id):
+    """Rejected unwanted or downvoted locations"""
+    user = get_jwt_identity()
+    if user.get("role") != "admin":
+        return 'You are not authorized to perform this action', 401
+    with open('locations.json', 'r', encoding="utf") as f:
+        data = json.load(f)
+    for location in data:
+        if location['id'] == location_id:
+            location['status'] = 'rejected'
+            return jsonify({'message': 'Location rejected. Try again later!'})
+    return jsonify({'error': 'Location not found!'}), 400
