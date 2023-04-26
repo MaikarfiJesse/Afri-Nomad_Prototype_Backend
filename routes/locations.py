@@ -12,7 +12,7 @@ def get_locations():
     """Get all locations"""
     with open('locations.json', mode="r", encoding="utf") as f:
         data = json.load(f)
-    return jsonify(data)
+    return jsonify([location for location in data if location.get('status',' None') == 'active'])
 
 
 @locations_bp.route('/add_locations', methods=['POST'])
