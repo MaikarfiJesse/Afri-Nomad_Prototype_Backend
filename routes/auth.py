@@ -108,8 +108,7 @@ def signup():
 def get_pending_contributors():
     """ list of pending contributors"""
     user = get_jwt_identity()
-    print(user)
-    if user.get("status") != "admin":
+    if user.get("role") != "admin":
         return "you are not allowed to do this action", 401
     with open('users.json', mode='r', encoding="utf") as f:
             data = json.load(f)
