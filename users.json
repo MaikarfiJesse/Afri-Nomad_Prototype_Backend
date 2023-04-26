@@ -2,30 +2,37 @@
     {
         "first_name": "izzeddin",
         "last_name": "Ishimwe",
-        "email": "test@test.com",
+        "email": "i.ishimwe@alustudent.com",
         "role": "admin",
         "status": "active",
         "password": "$2b$12$7eT03OmSHqGhEyS4ZivGduFZMB9Ao4vLgttYPWN9d0fJ2L9883Wo6",
         "id": 1
     },
     {
-        "first_name": "sdf dfdsf",
-        "last_name": "ishimwe",
-        "email": "test6@test.com",
+        "first_name": "Chibuzor",
+        "last_name": "Nwachukwu",
+        "email": "c.nwachukwu@alustudent.com",
+        "role": "admin",
+        "status": "active",
         "password": "$2b$12$7eT03OmSHqGhEyS4ZivGduFZMB9Ao4vLgttYPWN9d0fJ2L9883Wo6",
-        "reason": "I want to show the beaty of my country and i know a lot of locations",
-        "id": 2,
-        "role": "contributor",
-        "status": "pending"
+        "id": 2
     },
     {
-        "first_name": "test",
-        "last_name": "ishimwe",
-        "email": "test46@test.com",
+        "first_name": "Jesse",
+        "last_name": "Maikarfi",
+        "email": "j.maikarfi1@alustudent.com",
+        "role": "admin",
+        "status": "active",
         "password": "$2b$12$7eT03OmSHqGhEyS4ZivGduFZMB9Ao4vLgttYPWN9d0fJ2L9883Wo6",
-        "reason": "I want to show the beaty of my country and i know a lot of locations",
-        "id": 3,
-        "role": "contributor",
-        "status": "active"
+        "id": 3
+    },
+    {
+        "first_name": "Almarat",
+        "last_name": "ngutulu",
+        "email": "a.ngutulu@alustudent.com",
+        "role": "admin",
+        "status": "active",
+        "password": "$2b$12$7eT03OmSHqGhEyS4ZivGduFZMB9Ao4vLgttYPWN9d0fJ2L9883Wo6",
+        "id": 4
     }
 ]

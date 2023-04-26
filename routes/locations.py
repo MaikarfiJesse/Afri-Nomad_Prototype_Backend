@@ -28,6 +28,7 @@ def add_location():
         "location": location["location"],
         "img": location["img"],
         "imgs": location["imgs"],
+        "countryId": location["countryId"],
         "description": location["description"],
         "upvotes": [],
         "status": "pending",
